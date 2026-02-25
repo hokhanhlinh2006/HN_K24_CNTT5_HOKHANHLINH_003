@@ -13,19 +13,21 @@ public class Cau2 {
         }
         int[] sumMax = new int[2];
         int sum1;
-        int sum2;
-        for (int i = 0 , i<n , i++){
-            for (int j=1, j<n, j++){
-                arr[i] + arr[j] = sum1;
-                if (sum1 > sum2) {
-                    sumMax[0]= arr[i];
-                    sumMax[1]= arr[i];
+        int sum2 = Integer.MIN_VALUE;
+        
+          for (int i = 0; i < n - 1; i++){  
+             sum1 = arr[i] + arr[i + 1];
+
+               if (sum1 > sum2) {
+                sum2 = sum1;
+                sumMax[0] = arr[i];
+                sumMax[1] = arr[i + 1];
                 }
-                break;
+                
             }
 System.out.printf("Cap so lien ke co tong lon nhat");
-            for (int i =0 , i<2 , i++){
-                System.out.printf("%d " , sumMax[i]);
+            for (int k = 0; k < 2; k++){
+            System.out.print(sumMax[k] + " ");
             }
         }
     }
