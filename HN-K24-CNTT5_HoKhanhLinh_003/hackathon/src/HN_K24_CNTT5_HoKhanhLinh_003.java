@@ -24,12 +24,3 @@ public class HN_K24_CNTT5_HoKhanhLinh_003 {
                 
             }
         }
-
-
-
-
-
-
-
-    }
-}
